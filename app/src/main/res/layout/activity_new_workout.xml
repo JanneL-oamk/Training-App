@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewWorkoutActivity">
+
+
+    <TextView
+        android:id="@+id/enterSecondTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter time (seconds)"
+        android:textSize="28dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/setTimeEditor"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:hint="      "
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterSecondTextView"/>
+
+    <TextView
+        android:id="@+id/typeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="28dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@id/setTimeEditor"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/typeTextView"
+        android:text="Pause"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/checkbox"
+        android:onClick="onCheckBoxClicked"
+        />
+
+    <EditText
+        android:id="@+id/yourWorkOut"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="What do you want to do"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/typeTextView" />
+
+
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:gravity="center"
+        android:layout_marginTop="28dp"
+
+        app:layout_constraintTop_toBottomOf="@id/yourWorkOut"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HIIT Training app</string>
+    <string name="title_activity_add_new_workout">AddNewWorkoutActivity</string>
+</resources>
